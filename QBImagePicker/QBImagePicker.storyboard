@@ -100,11 +100,13 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Альбомы" id="r7D-Kp-3yC">
                         <barButtonItem key="leftBarButtonItem" title="Отмена" id="s1M-VA-CeM">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="cancel:" destination="QL5-wR-LYt" id="l9K-7e-2qt"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Готово" id="laG-jk-Ma2">
+                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="done:" destination="QL5-wR-LYt" id="Try-7j-DzS"/>
                             </connections>
@@ -279,6 +281,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Whc-Ry-EBq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.12549019607843137" green="0.12549019607843137" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pNX-sT-Qig">
                         <autoresizingMask key="autoresizingMask"/>

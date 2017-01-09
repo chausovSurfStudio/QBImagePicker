@@ -260,6 +260,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
 - (void)updateControlState
 {
     self.doneButton.enabled = [self isMinimumSelectionLimitFulfilled];
+    self.cancelButton.enabled = YES;
 }
 
 
