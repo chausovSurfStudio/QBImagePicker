@@ -42,7 +42,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
 {
     [super viewDidLoad];
     
-    [self setUpToolbarItems];
+    //[self setUpToolbarItems];
     
     // Fetch user albums and smart albums
     PHFetchResult *smartAlbums = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAny options:nil];
@@ -58,19 +58,6 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    
-    // Configure navigation item
-    self.navigationItem.title = @"Альбомы";
-    self.navigationItem.prompt = self.imagePickerController.prompt;
-    
-    // Show/hide 'Done' button
-    if (self.imagePickerController.allowsMultipleSelection) {
-        [self.navigationItem setRightBarButtonItem:self.doneButton animated:NO];
-    } else {
-        [self.navigationItem setRightBarButtonItem:nil animated:NO];
-    }
-    
-    [self.navigationItem setLeftBarButtonItem:self.cancelButton animated:NO];
     
     [self updateControlState];
     [self updateSelectionInfo];
