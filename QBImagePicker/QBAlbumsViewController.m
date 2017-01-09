@@ -60,7 +60,7 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
     [super viewWillAppear:animated];
     
     // Configure navigation item
-    self.navigationItem.title = NSLocalizedStringFromTableInBundle(@"albums.title", @"QBImagePicker", self.imagePickerController.assetBundle, nil);
+    self.navigationItem.title = @"Альбомы";
     self.navigationItem.prompt = self.imagePickerController.prompt;
     
     // Show/hide 'Done' button
@@ -69,6 +69,8 @@ static CGSize CGSizeScale(CGSize size, CGFloat scale) {
     } else {
         [self.navigationItem setRightBarButtonItem:nil animated:NO];
     }
+    
+    [self.navigationItem setLeftBarButtonItem:self.cancelButton animated:NO];
     
     [self updateControlState];
     [self updateSelectionInfo];
